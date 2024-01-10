@@ -28,4 +28,4 @@ jobs:
         # Path to the Dockerfile
         file: WebApp.Dockerfile
         # List of tags
-        tags: renshj/askit-aoai-chatgpt:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER
+        tags: renshj/askit-aoai-chatgpt:$GITHUB_RUN_NUMBER
