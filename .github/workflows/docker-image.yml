@@ -25,8 +25,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run:         
-        docker build . --file WebApp.Dockerfile --tag renshj/AskIT-aoai-chatGPT:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
-        docker tag renshj/AskIT-aoai-chatGPT:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER renshj/AskIT-aoai-chatGPT:latest;
-        docker push renshj/AskIT-aoai-chatGPT:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
-        docker push renshj/AskIT-aoai-chatGPT:latest;
+        docker build . --file WebApp.Dockerfile --tag renshj/askit-aoai-chatgpt:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
+        docker tag renshj/askit-aoai-chatgpt:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER renshj/askit-aoai-chatgpt:latest;
+        docker push renshj/askit-aoai-chatgpt:$(date +'%Y-%m-%d')_$GITHUB_RUN_NUMBER;
+        docker push renshj/askit-aoai-chatgpt:latest;
       
